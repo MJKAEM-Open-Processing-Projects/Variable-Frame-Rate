@@ -8,18 +8,6 @@ class ActualApproximateFrameRateCounter {
         this.framesBeforeNextUpdate = 0;
     }
 
-    isEnabled() {
-        return this.enabled;
-    }
-
-    getApproximateFrameRate() {
-        return this.approximateFrameRate;
-    }
-
-    getFramesBeforeNextUpdate() {
-        return this.framesBeforeNextUpdate;
-    }
-
     /**
      * Draws the approximated frame rate to the lower right corner of the
      * screen.
@@ -57,5 +45,17 @@ class ActualApproximateFrameRateCounter {
 
             this.framesBeforeNextUpdate++;
         }
+    }
+
+    getApproximateFrameRate() {
+        return this.approximateFrameRate;
+    }
+
+    isEnabled() {
+        return this.enabled;
+    }
+
+    getFramesBeforeNextUpdate() {
+        return this.framesBeforeNextUpdate;
     }
 }
