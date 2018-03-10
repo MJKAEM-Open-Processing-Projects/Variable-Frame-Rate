@@ -1,3 +1,8 @@
+/**
+ * A frame rate counter that displays in the background.
+ */
+const MAXIMUM_TARGET_FRAMERATE = 10000;
+
 class TargetFrameRateCounter {
     constructor(targetFrameRate = STANDARD_FRAMERATE) {
         this.targetFrameRate = targetFrameRate;
