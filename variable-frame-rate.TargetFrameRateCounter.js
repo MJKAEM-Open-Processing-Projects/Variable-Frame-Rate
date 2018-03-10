@@ -3,6 +3,9 @@ class TargetFrameRateCounter {
         this.targetFrameRate = targetFrameRate;
     }
 
+    /**
+     * Draws the target frame rate to the display.
+     */
     draw() {
         textSize(144);
         fill(255, 255, 255, 128);
@@ -11,6 +14,10 @@ class TargetFrameRateCounter {
             (height / 2) + (textSize() / 4));
     }
 
+    /**
+     * Checks if the up or down arrow is pressed and changes the target
+     * frame rate.
+     */
     update() {
         if (keyIsDown(DOWN_ARROW)) {
             if (this.getTargetFrameRate() > 1) {
